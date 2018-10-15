@@ -1,0 +1,145 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-light-2, 0.8),
+    rgba($color-grey-dark-3, 0.8)
+  );
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-light-2, 0.8),
+      rgba($color-grey-dark-3, 0.8)
+    );
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93vh, 0 100%);
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__sub-text {
+    margin-top: 1.5rem;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    color: $color-grey-light-1;
+    width: 70%;
+
+    @include respond(phone) {
+      margin-top: 3.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.4rem;
+      width: 85%;
+    }
+  }
+}
+
+.announce {
+  height: 55vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-light-2, 0.8),
+    rgba($color-grey-dark-3, 0.8)
+  );
+  background-size: cover;
+  background-position: top;
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+
+  //  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+  //      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  //      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  //      height: 95vh;
+  //  }
+  //
+  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  //          only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+  //      only screen and (min-width: 125em) {
+  //      background-image: linear-gradient(to right bottom,
+  //      rgba($color-grey-light-2, 0.8),
+  //      rgba($color-grey-dark-3, 0.8));
+  // }
+  //
+  //   @include respond(phone){
+  //       -webkit-clip-path: polygon(0 0, 100% 0, 100% 93vh, 0 100%);
+  //  clip-path: polygon(0 0, 100% 0, 100% 93vh, 0 100%);
+  //      }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__sub-text {
+    margin-top: 1.5rem;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    color: $color-grey-light-1;
+    width: 70%;
+
+    @include respond(phone) {
+      margin-top: 3.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.4rem;
+      width: 85%;
+    }
+  }
+}

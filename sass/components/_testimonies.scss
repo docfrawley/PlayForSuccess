@@ -1,0 +1,19 @@
+.testimonies {
+  &__first {
+    border: solid 2px $color-primary-light;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  &__second {
+    border: solid 2px $color-secondary-light;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  &__third {
+    border: solid 2px $color-tertiary-light;
+    padding: 5px;
+    border-radius: 3px;
+  }
+}
